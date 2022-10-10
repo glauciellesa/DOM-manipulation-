@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin-left: 10px;
+        margin-top: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(253, 184, 253);
+      }
+
+      input {
+        font-size: 20px;
+        background: rgb(222, 222, 222);
+        padding: 5px;
+        border: none;
+        margin-bottom: 100px;
+      }
+
+      .item {
+        margin: 10px 0;
+        padding: 7px 10px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(35, 221, 159);
+        font-weight: 600;
+        color: #444;
+        font-size: 20px;
+      }
+
+      .remove {
+        font-size: 20px;
+        color: rgb(215, 25, 25);
+        order: 1;
+      }
+
+      .bnt {
+        border: none;
+        background: rgb(215, 25, 25);
+        color: aliceblue;
+        margin-left: 20px;
+        padding: 8px;
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+    <script src="./appendAndTextNode.js" defer></script>
+  </head>
+  <body>
+    <div id="add-container">
+      <input id="inputText" type="text" />
+      <button id="bnt" class="bnt">Add</button>
+    </div>
+    <div id="places-container" class="placesContainer"></div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        background: rgb(194, 100, 194);
+      }
+
+      input {
+        font-size: 18px;
+        background: rgb(222, 222, 222);
+        padding: 5px;
+        margin-left: 10px;
+      }
+
+      .containerPai {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        background: mediumaquamarine;
+        border: 3px solid mediumseagreen;
+        font-size: 30px;
+        color: #444;
+        font-weight: bold;
+      }
+
+      .button {
+        border: none;
+        background: orangered;
+        color: aliceblue;
+        margin-left: 20px;
+        padding: 8px;
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+    <script src="./getAndInnerHTML.js" defer></script>
+  </head>
+  <body>
+    <div class="containerPai">
+      <div id="exemple" class="container">
+        <label for="textInput">Type your name:</label>
+        <input id="textInput" type="text" />
+      </div>
+      <div id="resultId" class="container">Your name is:</div>
+    </div>
+  </body>
+</html>

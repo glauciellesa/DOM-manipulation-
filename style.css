@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(234, 232, 232);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.container > * {
+  margin: 0 20px;
+}
+
+.title {
+  color: #444;
+  font-weight: 100;
+}
+
+.contact {
+  margin: 0 20px;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+input {
+  margin: 10px 0;
+  display: grid;
+  width: 23%;
+  border: 3px solid rgb(138, 137, 137);
+  border-radius: 5px;
+  padding: 10px;
+  color: aliceblue;
+}
